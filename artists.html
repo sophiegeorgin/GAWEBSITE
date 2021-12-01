@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="images/Group 11.png" width="100px" height="50px" />
+        </a>
+      </div>
+      <ul class="main-nav">
+        <li><a class="opencall" href="#">OPEN CALL</a></li>
+        <li>
+          <div class="dropdown">
+            <a class="dropbtn" href="#">EXHIBITIONS</a>
+            <div class="dropdown-content">
+              <a href="#">NEED FOR STREET</a>
+              <a href="#">PLASTIC (PAST)</a>
+              <a href="#">BLOOD (PAST)</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">ARTISTS</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </header>
+     <section> 
+    <template id="artistlisttemplate">
+      <article class="single-artist"></article>
+        <a class="" id="artisttlistlink" href="">
+          <img
+            class="artisthover"
+            src="https://raw.githubusercontent.com/sophiegeorgin/GAWEBSITE/master/data/brunatwo.png"
+            alt=""
+          />
+          <h1 class="artistname">Artist Name</h1>
+        </a>
+      </article>
+    </template> 
 
+    <div id="artist_list"></div>
 
-
-
-
-    <div id="artist_list">
-        <template class="artistlist-template">
-            <article class="single-artist">
-                <a class="" id="artisttlistLink" href="">
-                    <img class="artist-image" src="" alt="">
-                        <h1 class="artist-name"></h3>
-                        
-                </a>
-            </article>
-        </template>
-
-</body>
+    <script src="artists.js"></script>
+  </body>
 </html>

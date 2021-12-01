@@ -263,6 +263,20 @@ button {
   max-width: 50%;
 }
 
+#artistlisttemplate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 0 -0.5em 0 -0.5em;
+  border-bottom: rgb(255, 255, 255) solid 2px;
+}
+
+.artisthover {
+  max-width: 100%;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
