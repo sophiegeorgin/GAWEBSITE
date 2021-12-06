@@ -56,6 +56,7 @@ ul {
 
 h2 {
   font-size: 50px;
+  margin-bottom: 0%;
 }
 
 p {
@@ -543,6 +544,45 @@ form label {
   margin-top: 3%;
   margin-bottom: 3%;
 }
+
+/* ================================= 
+PLASTIC
+==================================== */
+
+.plasticpics {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.plasticpics img {
+  padding: 50px;
+  height: auto;
+  width: auto;
+  max-width: 400px;
+  max-height: 400px;
+  justify-content: space-around;
+  opacity: 60%;
+}
+
+.plasticpics img:hover {
+  opacity: 100%;
+}
+
+.plasticinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid white 3px;
+}
+
+.plasticinfo p {
+  text-align: center;
+  width: 50%;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
