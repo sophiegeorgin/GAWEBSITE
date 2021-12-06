@@ -107,10 +107,65 @@ a {
   color: #6d0055;
 }
 
+/* navover*/
+
+/*footer*/
+.footerheadings {
+  font-size: 20px;
+}
+footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  list-style: none;
+  border: white solid 3px;
+}
+
+#contact_footer {
+  display: flex;
+}
+
+#info_footer {
+  display: flex;
+}
+
+#some_footer {
+  display: flex;
+}
+
+#contact_footer li a,
+#info_footer li a,
+#some_footer li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.7rem;
+}
+
+#logo_footer {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
 .anti {
   font-family: "ppitalic";
   text-transform: lowercase;
   font-size: 100px;
+}
+
+.antis {
+  font-family: "ppitalic";
+  text-transform: lowercase;
+  font-size: 50px;
+}
+
+.scrollingtexttwo {
+  padding-top: 3%;
 }
 
 h1 {
@@ -141,6 +196,12 @@ h1 {
 
 .scrollingtext {
   padding-bottom: 0px;
+}
+
+.rippedpaper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @keyframes floatText {
@@ -258,11 +319,6 @@ button {
   opacity: 100%;
 }
 
-.rippedpaper {
-  display: grid;
-  max-width: 50%;
-}
-
 #artistlisttemplate {
   display: flex;
   justify-content: space-between;
@@ -277,6 +333,76 @@ button {
   max-width: 100%;
 }
 
+.firstrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+  padding-top: 14%;
+}
+
+.secondrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+.imgg {
+  width: 250px;
+  opacity: 60%;
+}
+
+.overlaytext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-self: center;
+  margin-top: -700px;
+}
+
+.hereto {
+  font-size: 150px;
+  z-index: 1;
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: semiitalic;
+}
+
+.exhibtext {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  z-index: 1;
+  max-width: 100px;
+  font-size: 100px;
+  margin-bottom: -100px;
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-bottom: -50px;
+  margin-left: 0px;
+  line-height: normal;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.exhibnav {
+  display: flex;
+  padding-top: 14%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  align-items: flex-end;
+  padding-bottom: 5%;
+}
+
+.plasticnav {
+  width: 30%;
+  height: 30%;
+}
+.bloodnav {
+  width: 30%;
+  height: 30%;
+}
 /* ================================= 
   Media Queries
 ==================================== */

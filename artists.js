@@ -44,11 +44,14 @@ function showArtist(artist) {
   const template = document.querySelector("#artistlisttemplate").content;
   const copy = template.cloneNode(true);
   copy.querySelector(".artistname").textContent = artist.artistname;
-  const imgurl = mediaurl + artist.hoverimg;
+  const imgurl = artist.hoverimg;
   copy.querySelector(".artisthover").src = imgurl;
   console.log(imgurl);
   const parent = document.querySelector("section");
   parent.appendChild(copy);
+  /*myCopy.querySelector(
+    "#artistlistlink"
+  ).href = `../artist.html?id=${artist._id}`; */
 }
 
 /*API key
