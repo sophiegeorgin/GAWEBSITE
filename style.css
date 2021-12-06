@@ -58,6 +58,12 @@ h2 {
   font-size: 50px;
 }
 
+p {
+  font-size: 16px;
+  color: white;
+  font-family: neuebook;
+}
+
 h2,
 h3,
 a {
@@ -169,7 +175,7 @@ ul {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 5rem;
   color: white;
   font-family: "neuemedium";
 }
@@ -227,6 +233,7 @@ button {
   background: none;
   text-transform: uppercase;
   text-align: center;
+  zoom: 1.5;
 
   font-size: 15px;
   display: flex;
@@ -408,6 +415,62 @@ button {
   NEED FOR STREET
 ==================================== */
 
+.coverpic {
+  max-width: 100%;
+  opacity: 50%;
+  overflow-y: hidden;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.covertitle {
+  margin-top: -350px;
+  align-self: center;
+  z-index: 1;
+}
+
+.coverinfo {
+  border: white solid 3px;
+  background-color: #090909;
+  display: flex;
+  flex-direction: row;
+  margin-top: 160px;
+  justify-content: space-between;
+}
+
+.galbuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+
+.streetinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 10%;
+  margin-left: 150px;
+  margin-right: 150px;
+  align-items: center;
+}
+
+.streetpic {
+  z-index: -1;
+  opacity: 30%;
+  margin-top: 70px;
+  margin-left: -80px;
+}
+.streettitle {
+  white-space: nowrap;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -432,5 +495,11 @@ button {
   .header {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
   }
 }
