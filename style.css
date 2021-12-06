@@ -234,7 +234,7 @@ button {
   text-transform: uppercase;
   text-align: center;
   zoom: 1.5;
-
+  color: white;
   font-size: 15px;
   display: flex;
   justify-content: center;
@@ -471,6 +471,78 @@ button {
   white-space: nowrap;
 }
 
+/* ================================= 
+  OPENCALL
+==================================== */
+
+.left {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 50%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+input {
+  color: transparent;
+  border: solid white 3px;
+  height: 30px;
+}
+
+.right {
+  justify-content: space-evenly;
+  border: white solid 3px;
+  display: flex;
+  flex-grow: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-top: 0;
+  padding: rem;
+}
+
+form ul {
+  color: white;
+  list-style-type: circle;
+  margin-left: 3%;
+  font-size: 18px;
+}
+
+form ul li {
+  text-align: left;
+}
+
+form label {
+  line-height: 1.5rem;
+  font-weight: lighter;
+  margin-top: 10px;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  align-items: left;
+
+  width: 100%;
+}
+
+.openmain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.opencallbut {
+  width: 40%;
+  align-self: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
 /* ================================= 
   Media Queries
 ==================================== */

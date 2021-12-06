@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Call</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="images/Group 11.png" width="100px" height="50px" />
+        </a>
+      </div>
+      <ul class="main-nav">
+        <li><a class="opencall" href="#">OPEN CALL</a></li>
+        <li>
+          <div class="dropdown">
+            <a class="dropbtn" href="#">EXHIBITIONS</a>
+            <div class="dropdown-content">
+              <a href="#">NEED FOR STREET</a>
+              <a href="#">PLASTIC (PAST)</a>
+              <a href="#">BLOOD (PAST)</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">ARTISTS</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </header>
+    <main class="openmain">
+      <div class="left">
+        <img
+          class="opencallimg"
+          width="550px"
+          height="350px"
+          src="images/187216951_1053494681845834_1382546329269697247_n.png"
+        />
+        <p>
+          We are looking for artists to contribute to our forthcoming exhibition
+          “Need for Street” to be held the 23rd of September at DZIDRA in
+          Baldersgade, Nørrebro. With “Need for Street” we want to zoom in on
+          the public space of the street as a democratic meeting ground for all
+          peoples and their individual artistic expressions.
+        </p>
+      </div>
+      <div class="right">
+        <div id="form_container">
+          <form name="opencallsignup" method="POST" data-netlify="true">
+            <label for="name"> <h2>Content For Application:</h2> </label>
+            <ul class="contentlist">
+              <li>Name</li>
+              <li>Concept Pitch</li>
+              <li>Background Info About You</li>
+              <li>Dimention & Material Ideas</li>
+              <li>Other Relevant Info</li>
+            </ul>
+            <label for="email"><h3>Name:</h3></label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email"><h3>E-mail:</h3></label>
+            <input type="email" id="email" name="email" />
+
+            <button class="opencallbut" type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
