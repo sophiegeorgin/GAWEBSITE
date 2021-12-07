@@ -1,4 +1,4 @@
-var url = "https://artposters-3f2b.restdb.io/rest/artists?max=28";
+let url = "https://artposters-3f2b.restdb.io/rest/artists?";
 const mediaurl = "https://artposters-3f2b.restdb.io/media/";
 const options = {
   headers: { "x-apikey": "61a7868dd31f354b1153f446" },
@@ -47,11 +47,11 @@ function showArtist(artist) {
   const imgurl = artist.hoverimg;
   copy.querySelector(".artisthover").src = imgurl;
   console.log(imgurl);
+
+  copy.querySelector("#artisttlistlink").href = `artist.html?id=${artist._id}`;
+
   const parent = document.querySelector("section");
   parent.appendChild(copy);
-  /*myCopy.querySelector(
-    "#artistlistlink"
-  ).href = `../artist.html?id=${artist._id}`; */
 }
 
 /*API key
