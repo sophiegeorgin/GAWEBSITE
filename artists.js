@@ -54,6 +54,10 @@ function showArtist(artist) {
   parent.appendChild(copy);
 }
 
+$(".artistname").hover(function () {
+  $(this).addClass(".artisthover");
+});
+
 /*API key
 const options = {
   headers: {

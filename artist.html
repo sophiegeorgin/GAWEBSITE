@@ -8,26 +8,51 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="images/Group 11.png" width="100px" height="50px" />
+        </a>
+      </div>
+      <ul class="main-nav">
+        <li><a class="opencall" href="#">OPEN CALL</a></li>
+        <li>
+          <div class="dropdown">
+            <a class="dropbtn" href="#">EXHIBITIONS</a>
+            <div class="dropdown-content">
+              <a href="#">NEED FOR STREET</a>
+              <a href="#">PLASTIC (PAST)</a>
+              <a href="#">BLOOD (PAST)</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">ARTISTS</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </header>
 
     <section> 
         
           <article class="single-artist"></article>
-          <h2 class="nameofartist">   </h2>
+          <div class="cover"> 
           <img
                 class="artistcover"
                 src="https://raw.githubusercontent.com/sophiegeorgin/GAWEBSITE/master/data/brunacover.png"
                 alt=""
               />
+              <h1 class="nameofartist">   </h1>
+            </div>
 
               <div class="sociallinks">
-                  <a href="">   <h1 class="WEBSITE">WEBSITE</h1> </a> <a href="">   <h1 class="facebook">FACEBOOK</h1> </a>
+                  <a href="">   <h2 class="WEBSITE">WEBSITE</h2> </a> <a href="">   <h2 class="facebook">FACEBOOK</h2> </a>
                  </div>
             <div class="artistinfo">
                 <img class="imgone" src="https://raw.githubusercontent.com/sophiegeorgin/GAWEBSITE/master/data/brunaone.png"> 
-                <img class="imgtwo" src="https://raw.githubusercontent.com/sophiegeorgin/GAWEBSITE/master/data/brunaone.png"> 
+                <img class="imgtwo" src="https://raw.githubusercontent.com/sophiegeorgin/GAWEBSITE/master/data/brunaone.png">             </div>
+<div class="artwork">
 <h3 class="titleone"> TITLEONE  </h3>
-<h3 class="titletwo"> TITLETWO  </h3>
-<h3 class="quote"> Insert artistic quote about the artist here</h3>4
+<h3 class="titletwo"> TITLETWO  </h3> </div>
+<h3 class="quote"> Insert artistic quote about the artist here</h3>
 <div class="biography">
     <h2 class="biographytitle"> Biography </h2>
 <p class="biographytext"> Here is all the text to do with the artist bla bla bla  </p> </div>
@@ -36,9 +61,40 @@
 
 
 
-            </div>
           </article>
          
+
+          <footer>
+            <section id="info_footer">
+              <ul>
+                <li>
+                  <a href="#" class="footerheadings"><b>INFO</b></a>
+                </li>
+                <li><a href="#">Manifesto</a></li>
+                <li><a href="#">Sponsors</a></li>
+              </ul>
+            </section>
+      
+            <section id="some_footer">
+              <ul>
+                <li>
+                  <a href="#" class="footerheadings"><b>SOCIAL MEDIA</b></a>
+                </li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </section>
+      
+            <section id="contact_footer">
+              <ul>
+                <li>
+                  <a href="#" class="footerheadings"><b>CONTACT</b></a>
+                </li>
+                <li><a href="#">tel - +459136991</a></li>
+                <li><a href="#">info@gallerianti.com</a></li>
+              </ul>
+            </section>
+    
     <script src="artist.js"></script>
   </body>
 </html>

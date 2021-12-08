@@ -30,6 +30,16 @@ function handleArtistList(artist) {
   //console.log(bags);
 
   document.querySelector(".nameofartist").textContent = artist.artistname;
+  document.querySelector(".artistcover").src = artist.artistheader;
+  document.querySelector(".imgone").src = artist.imgone;
+  document.querySelector(".imgtwo").src = artist.imgtwo;
+  document.querySelector(".titleone").textContent = artist.titleone;
+  document.querySelector(".titletwo").textContent = artist.titletwo;
+  document.querySelector(".quote").textContent = artist.quote;
+
+  document.querySelector(".biographytext").textContent = artist.biography;
+
+  document.querySelector(".artistimg").src = artist.artistimg;
 }
 
 // const url =

@@ -331,10 +331,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  margin: 0 -0.5em 0 -0.5em;
-  border-bottom: rgb(255, 255, 255) solid 2px;
 }
 
 .artisthover {
@@ -428,6 +424,7 @@ button {
   align-content: center;
   max-width: 100%;
   z-index: -1;
+  align-items: center;
 }
 
 .covertitle {
@@ -583,6 +580,107 @@ PLASTIC
   width: 50%;
 }
 
+/* ================================= 
+ARTISTS
+==================================== */
+
+.arttitle {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  margin-left: 5%;
+}
+
+.artistname {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  margin-bottom: -100px;
+  white-space: nowrap;
+  margin-top: 20px;
+  opacity: 50%;
+}
+
+.artistname:hover {
+  opacity: 100%;
+}
+
+.artisthover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 400px;
+  height: 470px;
+  margin-bottom: -300px;
+  z-index: -1;
+  display: none;
+}
+
+a .artisthover:hover {
+  display: block;
+}
+
+#artisttlistlink {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  row-gap: -400px;
+  margin: 5%;
+}
+
+/* ================================= 
+ARTIST 
+==================================== */
+
+.artistcover {
+  max-width: 100%;
+  opacity: 30%;
+  overflow-y: hidden;
+}
+
+.nameofartist {
+  margin-top: -350px;
+  margin-bottom: 150px;
+  align-self: center;
+  z-index: 1;
+}
+
+.sociallinks {
+  border: white solid 3px;
+  background-color: #090909;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0%;
+  z-index: 2;
+  opacity: 100%;
+  margin-top: 70px;
+}
+
+.sociallinks h2 {
+  margin-top: 0%;
+  background-color: #090909;
+}
+
+.artistinfo {
+  display: flex;
+  flex-wrap: row;
+  justify-content: space-around;
+}
+
+.artwork {
+  display: flex;
+  flex-wrap: row;
+  justify-content: space-around;
+}
+
+.artistinfo img {
+  max-width: 500px;
+  max-height: 750px;
+  justify-content: space-around;
+}
 /* ================================= 
   Media Queries
 ==================================== */
