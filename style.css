@@ -116,6 +116,8 @@ a {
 
 /* navover*/
 
+/*preloader*/
+
 /*footer*/
 .footerheadings {
   font-size: 20px;
@@ -465,6 +467,7 @@ button {
   margin-top: 70px;
   margin-left: -80px;
 }
+
 .streettitle {
   white-space: nowrap;
 }
@@ -635,7 +638,7 @@ ARTIST
 
 .artistcover {
   max-width: 100%;
-  opacity: 30%;
+  opacity: 60%;
   overflow-y: hidden;
 }
 
@@ -668,6 +671,7 @@ ARTIST
   display: flex;
   flex-wrap: row;
   justify-content: space-around;
+  margin-top: 5%;
 }
 
 .artwork {
@@ -676,10 +680,59 @@ ARTIST
   justify-content: space-around;
 }
 
+.artwork h3 {
+  border: white solid 3px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  align-self: center;
+}
+
 .artistinfo img {
   max-width: 500px;
   max-height: 750px;
   justify-content: space-around;
+}
+
+.quote {
+  display: flex;
+  flex-direction: row;
+  border-top: 3px white solid;
+  border-bottom: 3px white solid;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+  margin-top: 7%;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 25px;
+}
+
+.bigbiography {
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  padding-right: 9%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.artistimg {
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+  margin-left: -10%;
+}
+
+.biography {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
 }
 /* ================================= 
   Media Queries
