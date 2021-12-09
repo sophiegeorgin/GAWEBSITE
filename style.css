@@ -3,6 +3,8 @@ body {
 }
 
 /*fonts*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @font-face {
   font-family: neuemedium;
   src: url(fonts/ppneuemontreal-medium-webfont.woff);
@@ -57,6 +59,7 @@ ul {
 h2 {
   font-size: 50px;
   margin-bottom: 0%;
+  font-family: "Bebas Neue", cursive;
 }
 
 p {
@@ -111,7 +114,7 @@ a {
 }
 
 .main-nav a:hover {
-  color: #6d0055;
+  color: #ff00c8;
 }
 
 /* navover*/
@@ -178,9 +181,17 @@ ul {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 7rem;
   color: white;
-  font-family: "neuemedium";
+  /* font-family: "neuemedium"; */
+  font-family: "Bebas Neue", cursive;
+}
+
+.scrolltextt {
+  overflow-x: hidden;
+  overflow: hidden;
+  border-bottom: 3px white solid;
+  padding: 0%;
 }
 
 .scrolltext {
@@ -199,12 +210,11 @@ h1 {
   padding-left: 10%;
   display: inline-block;
   white-space: nowrap;
-
   font-weight: bold;
 }
 
 .scrollingtext {
-  padding-bottom: 0px;
+  padding-bottom: -10px;
 }
 
 .rippedpaper {
@@ -214,6 +224,12 @@ h1 {
   padding-top: 6%;
 }
 
+h1.scrolltext {
+  padding: 0px 0px 0px 0px;
+  font-size: 120px;
+  margin: 0px 0px 0px 0px;
+  line-height: 1;
+}
 @keyframes floatText {
   to {
     transform: translateX(-70%);
@@ -225,6 +241,7 @@ h1 {
   -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  border-bottom: solid white 3px;
 }
 
 .logo {
@@ -341,15 +358,19 @@ button {
   overflow: hidden;
   z-index: -1;
   flex-direction: row;
-  margin-top: -15px;
+  margin-top: 70px;
+}
+
+.videotext {
+  zoom: 1.5;
 }
 
 .tape {
   position: absolute;
-  left: 23rem;
-  top: 18rem;
-  width: 170px;
-  height: 170px;
+  left: 20rem;
+  top: 13rem;
+  width: 270px;
+  height: 270px;
 }
 
 .tape img {
@@ -792,6 +813,163 @@ ARTIST
   flex-direction: column;
   max-width: 40%;
 }
+
+/* ================================= 
+  ABOUT 
+==================================== */
+.about {
+  padding: 3%;
+}
+
+.arrows {
+  position: absolute;
+  left: 50%;
+  padding-bottom: 10%;
+}
+
+.arrows path {
+  stroke: #ffffff;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+  justify-content: center;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
+.bblogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 6%;
+  padding-top: 6%;
+}
+
+.whoweare {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.whowearetext {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+.whoimg {
+  max-width: 100%;
+  height: auto;
+  width: 600px;
+  height: 550px;
+}
+
+.hh {
+  margin: 0%;
+}
+
+.whatwedo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15%;
+}
+
+.quote h3 {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+#quotee {
+  margin-top: 10%;
+}
+
+.whatwedotext {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+.whywedoit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.whytext {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  margin-top: -15%;
+}
+
+.thanksimg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 6%;
+}
+
+.thanks {
+  margin-top: 10%;
+}
+
+.thankstxt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
