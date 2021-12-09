@@ -44,8 +44,8 @@ header {
 }
 body {
   font-family: "neuebook", sans-serif;
-  line-height: 1.6;
-  margin: 15px;
+  /* line-height: 1.6; */
+  /* margin: 15px; */
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
@@ -57,7 +57,7 @@ ul {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 0%;
   font-family: "Bebas Neue", cursive;
 }
@@ -90,13 +90,14 @@ a {
 
 .Exhibition {
   font-family: "ppitalic";
+  font-size: 50px;
 }
 
 .logo {
-  max-width: 30%;
+  max-width: 70%;
+  margin-left: 3%;
 }
 
-.logo a,
 .main-nav a {
   padding: 5px 20px;
   text-transform: uppercase;
@@ -153,11 +154,24 @@ footer {
   text-decoration: none;
   color: #fff;
   font-weight: 300;
-  line-height: 1.7rem;
+  line-height: 1.5rem;
+}
+
+.footerheadings {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  text-decoration: underline white solid 2px;
+}
+
+.footerheadings b {
+  text-decoration: underline white solid 2px;
+  line-height: 1.4;
 }
 
 #logo_footer {
   display: flex;
+  align-self: center;
+  margin-right: -20%;
 }
 
 ul {
@@ -236,8 +250,8 @@ h1.scrolltext {
   }
 }
 .header {
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
   -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
@@ -315,8 +329,9 @@ button:hover {
   align-content: center;
   align-items: center;
   margin-top: 5px;
-  padding-bottom: 6%;
-  zoom: 1;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  zoom: 1.2;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -447,7 +462,8 @@ button:hover {
   -moz-transform: rotate(-90deg);
   z-index: 1;
   max-width: 100px;
-  font-size: 90px;
+  font-size: 120px;
+  line-height: 0.4;
   margin-bottom: -100px;
   margin-top: 0px;
   margin-right: 5px;
@@ -457,12 +473,16 @@ button:hover {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
+h2 .exhibtext {
+  line-sp: 1rem;
+}
+
 .exhibnav {
   display: flex;
-  padding-top: 14%;
+  padding-top: 29%;
   flex-direction: row;
   justify-content: center;
-  gap: 25px;
+  gap: 2px;
   align-items: flex-end;
   padding-bottom: 5%;
   justify-content: space-around;
@@ -529,6 +549,9 @@ a {
   flex-direction: row;
   margin-top: 160px;
   justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 10%;
+  line-height: 1;
 }
 
 .galbuttons {
@@ -604,6 +627,10 @@ form ul li {
   text-align: left;
 }
 
+.left h2 {
+  line-height: 0.5;
+}
+
 form label {
   line-height: 1.5rem;
   font-weight: lighter;
@@ -616,6 +643,10 @@ form label {
   width: 100%;
 }
 
+label h2 {
+  padding-bottom: 6%;
+}
+
 .openmain {
   display: flex;
   flex-direction: row;
@@ -623,6 +654,7 @@ form label {
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 10%;
 }
 
 .opencallbut {
