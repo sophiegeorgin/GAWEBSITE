@@ -211,6 +211,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 6%;
 }
 
 @keyframes floatText {
@@ -228,6 +229,37 @@ h1 {
 
 .logo {
   max-width: 40%;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+@keyframes floatt {
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
 }
 
 button {
@@ -259,8 +291,9 @@ button {
   flex-direction: row;
   align-content: center;
   align-items: center;
-  margin-top: -5px;
-  zoom: 1.5;
+  margin-top: 5px;
+  padding-bottom: 6%;
+  zoom: 1;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -345,6 +378,9 @@ button {
   justify-content: space-around;
   padding: 2%;
   padding-top: 14%;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }
 
 .secondrow {
@@ -352,6 +388,9 @@ button {
   flex-direction: row;
   justify-content: space-around;
   padding: 2%;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: floatt 6s ease-in-out infinite;
 }
 
 .imgg {
@@ -381,7 +420,7 @@ button {
   -moz-transform: rotate(-90deg);
   z-index: 1;
   max-width: 100px;
-  font-size: 100px;
+  font-size: 90px;
   margin-bottom: -100px;
   margin-top: 0px;
   margin-right: 5px;
@@ -399,15 +438,36 @@ button {
   gap: 25px;
   align-items: flex-end;
   padding-bottom: 5%;
+  justify-content: space-around;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
-.plasticnav {
-  width: 30%;
-  height: 30%;
+a .plasticnav {
+  width: 70%;
+  height: 70%;
+  padding-left: -10%;
+  max-width: 100%;
+  width: 400px;
+  opacity: 60%;
 }
-.bloodnav {
-  width: 30%;
-  height: 30%;
+a .bloodnav {
+  width: 70%;
+  height: 70%;
+  max-width: 100%;
+  width: 400px;
+  opacity: 60%;
+}
+
+a .bloodnav:hover {
+  opacity: 100%;
+}
+a .plasticnav:hover {
+  opacity: 100%;
+}
+
+a {
+  padding: 0%;
 }
 
 /* ================================= 
@@ -607,6 +667,8 @@ ARTISTS
 
 .artistname:hover {
   opacity: 100%;
+  text-decoration: underline white solid 3px;
+  text-underline-offset: 0.2em;
 }
 
 .artisthover {
@@ -618,10 +680,6 @@ ARTISTS
   margin-bottom: -300px;
   z-index: -1;
   display: none;
-}
-
-a .artisthover:hover {
-  display: block;
 }
 
 #artisttlistlink {

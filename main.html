@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="nav.js"></script>
 
     <title>Homepage</title>
@@ -17,19 +19,19 @@
         </a>
       </div>
       <ul class="main-nav">
-        <li><a class="opencall" href="#">OPEN CALL</a></li>
+        <li><a class="opencall" href="opencall.html">OPEN CALL</a></li>
         <li>
           <div class="dropdown">
             <a class="dropbtn" href="#">EXHIBITIONS</a>
             <div class="dropdown-content">
-              <a href="#">NEED FOR STREET</a>
-              <a href="#">PLASTIC (PAST)</a>
-              <a href="#">BLOOD (PAST)</a>
+              <a href="needforstreet.html">NEED FOR STREET</a>
+              <a href="plastic.html">PLASTIC (PAST)</a>
+              <a href="blood.html">BLOOD (PAST)</a>
             </div>
           </div>
         </li>
-        <li><a href="#">ARTISTS</a></li>
-        <li><a href="#">ABOUT</a></li>
+        <li><a href="artists.html">ARTISTS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
       </ul>
     </header>
 
@@ -88,19 +90,24 @@
       </div>
     </div>
 
-    <div class="rippedpaper"> 
+    <div class="rippedpaper" data-aos="fade-up"
+    data-aos-anchor-placement="center-center"> 
       <img src="images/Group 15.png" width="1000px" height="500px"/>
     </div>
   
-    <div class="firstrow"> <img class="imgg" src="images/Image 3.png"> <img class="imgg" src="images/Image 4.png"> 
+    <div class="firstrow">
+    <img class="imgg"  src="images/Image 3.png" 
+>  <img class="imgg" src="images/Image 4.png"> 
       <img class="imgg" src="images/Image 5.png">
     </div>
     <div class="secondrow">   <img class="imgg" src="images/Image 6.png">  <img class="imgg" src="images/Image 7.png"> </div>
     <div class="overlaytext"> <h1 class="hereto">HERE TO MAKE NOISE</h1> </div>
     <div class="exhibnav">
        <h2 class="exhibtext"> PREVIOUS EXHIBITIONS </h2>
-       <img class="plasticnav" src="images/plasticlink.png"> 
-       <img class="bloodnav" src="images/bloodlink.png"> 
+      <a href="plastic.html" data-aos="fade-up"
+      data-aos-anchor-placement="center-center">  <img class="plasticnav" src="images/plasticlink.png"> </a>
+     <a href="blood.html" data-aos="fade-up"
+     data-aos-anchor-placement="center-center" > <img class="bloodnav" src="images/bloodlink.png">  </a>
 
 
     </div>
@@ -149,7 +156,10 @@
       </section>
       
       </footer>
-  
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 
   </body>
 </html>
