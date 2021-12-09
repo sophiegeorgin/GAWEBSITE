@@ -292,6 +292,12 @@ button {
   justify-content: center;
 }
 
+button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+
 /* Dropdown Button */
 .dropbtn {
   background-color: #090909;
