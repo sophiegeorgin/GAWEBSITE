@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="nav.js"></script>
 
     <title>Homepage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
   <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+  </div>
     <header class="header">
       <div class="logo">
         <a href="main.html">
@@ -33,6 +39,9 @@
         <li><a href="artists.html">ARTISTS</a></li>
         <li><a href="about.html">ABOUT</a></li>
       </ul>
+     
+     
+      
     </header>
 
     <div class="scrollingtext">
@@ -159,6 +168,12 @@
       <script>
         AOS.init();
       </script>
+      <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    
 
   </body>
 </html>
