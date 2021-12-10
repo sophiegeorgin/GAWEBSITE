@@ -38,6 +38,14 @@
         <li><a href="about.html">ABOUT</a></li>
       </ul>
     </header>
+
+    <div class="icon" id="toggle-button">
+      <div class="icon-line"></div>
+      <div class="icon-line"></div>
+      <div class="icon-line"></div>
+
+
+ </div>
     
      <section> 
       <h2 class="arttitle"> Artists</h2>
@@ -100,5 +108,13 @@
         $(".loader-wrapper").fadeOut("slow");
       });
   </script>
+   <script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById ('navi-list');
+    toggleButton.addEventListener('click', () => {
+
+     naviList.classList.toggle('active');
+    })
+ </script>
   </body>
 </html>

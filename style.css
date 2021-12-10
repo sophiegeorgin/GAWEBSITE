@@ -104,6 +104,17 @@ body {
   box-sizing: border-box;
 }
 
+.icon-line {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+.icon {
+  display: none;
+}
+
 header {
   padding: 0px;
   margin: 0px;
@@ -1104,5 +1115,37 @@ ARTIST
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 30px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    left: 500px;
+    top: 20px;
+  }
+
+  .logo img {
+    zoom: 2;
+  }
+
+  a.dropbtn {
+    align-self: center;
+  }
+
+  .main-nav {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+    display: none;
+  }
+
+  .active {
+    display: block;
   }
 }

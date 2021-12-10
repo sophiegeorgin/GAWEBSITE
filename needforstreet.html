@@ -19,7 +19,7 @@
           <img src="images/newnewlogo.png" width="40%" height="40%" />
         </a>
       </div>
-      <ul class="main-nav">
+      <ul class="main-nav" id="navi-list">
         <li><a class="opencall" href="opencall.html">OPEN CALL</a></li>
         <li>
           <div class="dropdown">
@@ -35,6 +35,14 @@
         <li><a href="about.html">ABOUT</a></li>
       </ul>
     </header>
+
+    <div class="icon" id="toggle-button">
+      <div class="icon-line"></div>
+      <div class="icon-line"></div>
+      <div class="icon-line"></div>
+
+
+ </div>
 
     <div class="cover">
       <img class="coverpic" src="images/cover1.png" />
@@ -134,5 +142,13 @@
         $(".loader-wrapper").fadeOut("slow");
       });
   </script>
+   <script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById ('navi-list');
+    toggleButton.addEventListener('click', () => {
+
+     naviList.classList.toggle('active');
+    })
+ </script>
   </body>
 </html>
