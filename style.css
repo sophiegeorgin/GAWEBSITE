@@ -68,6 +68,40 @@ body {
     height: 0%;
   }
 }
+/*cursor*/
+
+div.cursors div {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 32px;
+  height: 32px;
+  background-color: #8c00ff;
+  border-radius: 50%;
+  z-index: 10000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+div.cursors div span {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 300px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #7700ff;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+div.cursors div span.visible {
+  opacity: 1;
+}
+
 /*fonts*/
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
@@ -401,6 +435,10 @@ button:hover {
   border: 1px solid white;
 }
 
+button a:hover {
+  color: black;
+}
+
 /* Dropdown Button */
 .dropbtn {
   background-color: #090909;
@@ -618,7 +656,7 @@ a {
 
 .coverpic {
   max-width: 100%;
-  opacity: 50%;
+  opacity: 80%;
   overflow-y: hidden;
 }
 
@@ -642,7 +680,7 @@ a {
   background-color: #090909;
   display: flex;
   flex-direction: row;
-  margin-top: 160px;
+  margin-top: 140px;
   justify-content: space-between;
   padding-left: 15%;
   padding-right: 10%;
@@ -658,9 +696,10 @@ a {
 
 .streetinfo {
   display: flex;
+  padding-top: 5%;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   margin-left: 150px;
   margin-right: 150px;
   align-items: center;
@@ -790,11 +829,28 @@ PLASTIC
   justify-content: center;
   align-items: center;
   border: solid white 3px;
+  margin-top: 5%;
 }
 
 .plasticinfo p {
   text-align: center;
   width: 50%;
+}
+
+.plasticinfo h2 {
+  padding-top: 3%;
+  text-decoration: underline white solid 3px;
+}
+
+.artistnamee {
+  opacity: 50%;
+  padding-left: 5%;
+}
+
+.artistnamee:hover {
+  opacity: 100%;
+  text-decoration: underline white solid 3px;
+  text-underline-offset: 0.2em;
 }
 
 /* ================================= 

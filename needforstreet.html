@@ -89,18 +89,42 @@
         src="images/STREET.png"
       />
     </div>
+    <section class="need-artists"> 
+      <h2 class="arttitle"> Current Artists</h2>
 
-    <div class="artists">
-      <h2>ARTISTS</h2>
-      <div class="list">
-        <h1>BRUNA SOUZA</h1>
-        <h1>CLARA MOSCONI</h1>
-        <h1>BRUNA SOUZA</h1>
-        <h1>BRUNA SOUZA</h1>
-        <h1>BRUNA SOUZA</h1>
-        <h1>BRUNA SOUZA</h1>
-      </div>
-      
+  <template id="needartisttemplate">
+    
+    <!-- <article class="single-artist"></article> -->
+      <a id="needartist" href="">
+        <!-- <img
+          class="artisthover"
+          src="https://raw.githubusercontent.com/sophiegeorgin/GAWEBSITE/master/data/brunatwo.png"
+          alt="imageof artist work"
+        /> -->
+        <h1 class="artistnamee">Artist Name</h1>
+      </a>
+    </article>
+  </template> 
+  <div id="artist_list"></div>
+
+</section>
+
+<div class="cursors">
+  <div>
+    <span></span>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
     <footer>
       <section id="info_footer">
@@ -150,5 +174,8 @@
      naviList.classList.toggle('active');
     })
  </script>
+ <script src="need.js"></script>
+ <script src="cursor.js"></script>
+
   </body>
 </html>

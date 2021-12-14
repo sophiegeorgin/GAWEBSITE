@@ -1,5 +1,5 @@
 const url =
-  'https://artposters-3f2b.restdb.io/rest/artists?q={"Exhibition": "plastic"}';
+  'https://artposters-3f2b.restdb.io/rest/artists?q={"Exhibition": "need"}';
 const mediaurl = "https://artposters-3f2b.restdb.io/media/";
 const options = {
   headers: { "x-apikey": "61a7868dd31f354b1153f446" },
@@ -17,22 +17,22 @@ fetch(url, options)
     return res.json();
   })
   .then(function (data) {
-    showPlasticloop(data);
+    showNeedloop(data);
   });
 
-function showPlasticloop(data) {
+function showNeedloop(data) {
   console.log(data);
-  data.forEach(showPlastic);
+  data.forEach(showNeed);
 }
 
-function showPlastic(artist) {
+function showNeed(artist) {
   console.log(artist);
 
-  const template = document.querySelector("#plasticartisttemplate").content;
+  const template = document.querySelector("#needartisttemplate").content;
   const copy = template.cloneNode(true);
   copy.querySelector(".artistnamee").textContent = artist.artistname;
-  copy.querySelector("#plasticartist").href = `artist.html?id=${artist._id}`;
+  copy.querySelector("#needartist").href = `artist.html?id=${artist._id}`;
 
-  const parent = document.querySelector(".plastic-artists");
+  const parent = document.querySelector(".need-artists");
   parent.appendChild(copy);
 }
