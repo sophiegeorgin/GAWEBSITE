@@ -32,6 +32,6 @@ function showPlastic(artist) {
   copy.querySelector(".artistnamee").textContent = artist.artistname;
   copy.querySelector("#plasticartist").href = `artist.html?id=${artist._id}`;
 
-  const parent = document.querySelector("section");
+  const parent = document.querySelector(".plastic-artists");
   parent.appendChild(copy);
 }
