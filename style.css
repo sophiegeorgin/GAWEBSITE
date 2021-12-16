@@ -1217,7 +1217,8 @@ p {
   }
 }
 
-@media all and (max-width: 375px) {
+/* @media all and (max-width: 375px) { */
+@media only screen and (max-width: 600px) {
   h1 {
     font-size: 30px;
   }
@@ -1232,6 +1233,12 @@ p {
     min-height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 20px;
   }
 }
 
@@ -1268,6 +1275,16 @@ p {
 }
 
 @media all and (max-width: 500px) {
+  .icon {
+    display: block;
+    position: absolute;
+    left: 329px;
+    top: 20px;
+  }
+}
+
+/* @media all and (max-width: 500px)  */
+@media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
     position: sticky;
@@ -1286,7 +1303,7 @@ p {
   .icon {
     display: block;
     position: absolute;
-    left: 329px;
+    left: 429px;
     top: 20px;
   }
 
@@ -1421,7 +1438,8 @@ p {
   #logo_footer {
     display: flex;
     justify-content: center;
-    margin-right: 6%;
+    margin-right: 9%;
+    width: 1000px;
   }
 
   #contact_footer {
