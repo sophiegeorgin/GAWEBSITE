@@ -377,7 +377,6 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 6%;
 }
 
 h1.scrolltext {
@@ -402,6 +401,13 @@ h1.scrolltext {
 
 .logo {
   max-width: 40%;
+}
+
+.gif {
+  margin-right: -400px;
+  margin-top: -100px;
+  z-index: 1;
+  transform: rotate(280deg);
 }
 
 @keyframes float {
@@ -759,6 +765,8 @@ input {
   border: white solid 3px;
   display: flex;
   flex-grow: 1;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 form {
@@ -782,6 +790,7 @@ form ul li {
 
 .left h2 {
   line-height: 0.5;
+  padding-top: 4%;
 }
 
 form label {
@@ -1340,7 +1349,7 @@ p {
   }
 
   .rippedpaper img {
-    max-width: 170%;
+    max-width: 100%;
     height: auto;
     width: 8000px;
   }
