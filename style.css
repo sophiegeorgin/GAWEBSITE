@@ -1,5 +1,5 @@
 body {
-  background: #090909;
+  background: #1a1a0a;
 }
 
 /*preloader*/
@@ -1338,6 +1338,16 @@ p {
     padding-bottom: 7%;
     margin-bottom: -60px;
   }
+  .exhibnav {
+    padding-top: 50%;
+  }
+  .igmockups {
+    padding-bottom: 20%;
+  }
+
+  .exhibtext {
+    margin-top: 20%;
+  }
 
   h2 {
     font-size: 35px;
@@ -1356,6 +1366,7 @@ p {
 
   .firstrow {
     gap: 6%;
+    display: none;
   }
 
   form {
@@ -1364,6 +1375,7 @@ p {
 
   .secondrow {
     gap: 6%;
+    display: none;
   }
 
   .hereto {
@@ -1385,6 +1397,10 @@ p {
     padding-bottom: 10%;
     text-align: center;
     white-space: nowrap;
+  }
+
+  .gif {
+    display: none;
   }
 
   .exhibnav {
