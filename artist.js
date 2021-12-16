@@ -42,6 +42,20 @@ function handleArtistList(artist) {
   document.querySelector(".artistimg").src = artist.artistimg;
 }
 
+window.onload = function () {
+  // alert("page is loaded and rendered");
+};
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  },
+  false
+);
+
 // const url =
 //   "https://artposters-3f2b.restdb.io/rest/artists/61a74cf63abd19450008a879";
 
